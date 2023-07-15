@@ -1,164 +1,314 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Data AOS -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Style -->
-    <link href="/dist/output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4 flex" data-aos="fade-right" data-aos-duration="1000">
-            <img src="dist/img/logo.png" class="h-12 mr-3 mt-3" alt="Logo" />
-            <a
-              href="#home"
-              class="font-bold text-lg text-orange-600 py-4 hidden lg:block"
-              id="brand"
-              >Unit Kreativitas Mahasiswa
-              <br />
-              <span class="text-lg">Korps Protokeler Mahasiswa UNISMA</span>
-            </a>
+  <!-- Data AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Style -->
+  <link href="dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4 flex" data-aos="fade-right" data-aos-duration="1000">
+          <img src="dist/img/logo.png" class="h-12 mr-3 mt-3" alt="Logo" />
+          <a href="#home" class="font-bold text-lg text-orange-600 py-4 hidden lg:block" id="brand">Unit Kreativitas
+            Mahasiswa
+            <br />
+            <span class="text-lg">Korps Protokeler Mahasiswa UNISMA</span>
+          </a>
+        </div>
+        <div class="flex items-center px-4" data-aos="fade-up" data-aos-duration="2000">
+          <button class="block absolute right-4 lg:hidden" id="hamburger" name="hamburger" type="button">
+            <span class="hamburger-line bg-slate-950 transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line bg-slate-950 transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line bg-slate-950 transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+          <nav
+            class="hidden absolute py-5 rounded-b-lg max-w-[250px] w-full right-4 top-full bg-white lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent"
+            id="nav-menu">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="/" class="text-base py-2 mx-8 group-hover:text-orange-600 flex">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="/about.html" class="text-base py-2 mx-8 group-hover:text-orange-600 flex">Tentang Kami</a>
+              </li>
+              <li class="group">
+                <a href="/gallery.html" class="text-base py-2 mx-8 group-hover:text-orange-600 flex">Galeri</a>
+              </li>
+              <li class="group">
+                <a href="/news.html" class="text-base py-2 mx-8 group-hover:text-orange-600 flex">Berita Acara</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-36 pb-12">
+    <!-- Heading -->
+    <div class="container mx-auto px-4 flex flex-wrap lg:flex-nowrap">
+      <!-- Main Content -->
+      <div class="w-full xl:w-9/12 ">
+        <div class="container px-6 mx-auto">
+          <!-- Section: Design Block -->
+          <section class="mb-32 text-gray-800 md:text-left">
+            <h2 class="text-3xl font-bold mb-12 text-center">Berita Acara</h2>
+            <!-- Card Content -->
+            <div class="flex flex-wrap mb-6">
+              <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+                  data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" class="w-full" alt="Louvre" />
+                  <div
+                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                    style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                </div>
+              </div>
+
+              <div class="grow-0 shrink-0 basis-auto w-full md:w-9/12 xl:w-7/12 px-3 mb-6 md:mb-0 mr-auto">
+                <h5 class="text-lg font-bold mb-3">Judul Berita</h5>
+                <p class="text-gray-500 mb-6">
+                  <small>Published <u>13.01.2022</u></small>
+                </p>
+                <p class="text-gray-500">
+                  Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                  placerat vulputate. Ut vulputate est non quam dignissim
+                  elementum. Donec a ullamcorper diam.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-6">
+              <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+                  data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" class="w-full" alt="Louvre" />
+                  <a href="#!">
+                    <div
+                      class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                      style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="grow-0 shrink-0 basis-auto w-full md:w-9/12 xl:w-7/12 px-3 mb-6 md:mb-0 mr-auto">
+                <h5 class="text-lg font-bold mb-3">Judul Berita</h5>
+                <p class="text-gray-500 mb-6">
+                  <small>Published <u>13.01.2022</u></small>
+                </p>
+                <p class="text-gray-500">
+                  Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                  placerat vulputate. Ut vulputate est non quam dignissim
+                  elementum. Donec a ullamcorper diam.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <section class="my-12">
+              <div class="container">
+                <div class="flex flex-col items-center">
+                  <!-- Help text -->
+                  <span class="text-sm text-gray-700 dark:text-gray-400">
+                    Showing <span class="font-semibold text-gray-900 dark:text-white">1</span> to <span
+                      class="font-semibold text-gray-900 dark:text-white">10</span> of <span
+                      class="font-semibold text-gray-900 dark:text-white">100</span> Entries
+                  </span>
+                  <div class="inline-flex mt-2 xs:mt-0">
+                    <!-- Buttons -->
+                    <button
+                      class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-l hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                      <svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Prev
+                    </button>
+                    <button
+                      class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border-0 border-l border-gray-700 rounded-r hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                      Next
+                      <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </section>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="mt-8 lg:w-3/12 lg:mt-0 ">
+        <div class="w-full bg-white shadow-sm rounded-sm p-4 ">
+          <div class="container">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3 font-roboto">Kegiatan</h3>
+            <div class="space-y-4">
+              <!-- list item -->
+              <a href="#" class="flex group">
+                <div class="flex-shrink-0">
+                  <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg"
+                    class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover">
+                </div>
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
+                    Judul Berita
+                  </h5>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs"><i class="far fa-clock"></i></span>
+                    June 11, 2021
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="flex group">
+                <div class="flex-shrink-0">
+                  <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg"
+                    class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover">
+                </div>
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
+                    Judul Berita
+                  </h5>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs"><i class="far fa-clock"></i></span>
+                    June 11, 2021
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-          <div
-            class="flex items-center px-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <button
-              class="block absolute right-4 lg:hidden"
-              id="hamburger"
-              name="hamburger"
-              type="button"
-            >
-              <span
-                class="hamburger-line bg-slate-950 transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line bg-slate-950 transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line bg-slate-950 transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-            <nav
-              class="hidden absolute py-5 rounded-b-lg max-w-[250px] w-full right-4 top-full bg-white lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent"
-              id="nav-menu"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="/"
-                    class="text-base py-2 mx-8 group-hover:text-orange-600 flex"
-                    >Beranda</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="/about.html"
-                    class="text-base py-2 mx-8 group-hover:text-orange-600 flex"
-                    >Tentang Kami</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="/gallery.html"
-                    class="text-base py-2 mx-8 group-hover:text-orange-600 flex"
-                    >Galeri</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="/news.html"
-                    class="text-base py-2 mx-8 group-hover:text-orange-600 flex"
-                    >Berita Acara</a
-                  >
-                </li>
-              </ul>
-            </nav>
+
+          <div class="container mt-10">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3 font-roboto">Berita Populer</h3>
+            <div class="space-y-4">
+              <!-- list item -->
+              <a href="#" class="flex group">
+                <div class="flex-shrink-0">
+                  <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg"
+                    class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover">
+                </div>
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
+                    Judul Berita
+                  </h5>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs"><i class="far fa-clock"></i></span>
+                    June 11, 2021
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="flex group">
+                <div class="flex-shrink-0">
+                  <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg"
+                    class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover">
+                </div>
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
+                    Judul Berita
+                  </h5>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs"><i class="far fa-clock"></i></span>
+                    June 11, 2021
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-700 pt-24 pb-12 fixed-bottom">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <h2 class="font-bold text-4xl text-white mb-3">UKM Korps Protokoler Mahasiswa</h2>
+          <h3 class="font-bold text-2xl mb-2">Universitas Islam Malang</h3>
+          <p class="">email@gmail.com</p>
+          <p class=""> Jln. Mayjen Haryono No 193, Malang 65114</p>
+
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-5">Tentang Kami</h3>
+          <hr class="my-3">
+          <p class="text-slate-300 mt-3 text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sequi tempora asperiores accusamus
+            nam
+            adipisci non, tempore veniam beatae unde aliquid ducimus voluptatibus? Quae, tempore.
+          </p>
+
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
+          <ul class="text-slate-300">
+            <li class=""><a href="#" class="inline-block text-base hover:text-orange-600 mb-3">Beranda</a></li>
+            <li class=""><a href="#" class="inline-block text-base hover:text-orange-600 mb-3">Tentang
+                Kami</a></li>
+            <li class=""><a href="#" class="inline-block text-base hover:text-orange-600 mb-3">Galeri</a></li>
+            <li class=""><a href="#" class="inline-block text-base hover:text-orange-600 mb-3">Berita
+                Acara</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center text-white justify-center">
+          <div id="media-social" class="pt-2 text-4xl">
+            <!-- Instagram -->
+            <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
+                class="bx bxl-instagram"></i></a>
+            <!-- Youtube -->
+            <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
+                class="bx bxl-youtube"></i></a>
+            <!-- Tiktok -->
+            <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
+                class="bx bxl-tiktok"></i></a>
+            <!-- Whatsapp -->
+            <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
+                class="bx bxl-whatsapp"></i></a>
           </div>
         </div>
       </div>
-    </header>
-
-    <!-- Footer -->
-<footer class="bg-slate-700 pt-24 pb-12 fixed-bottom">
-    <div class="container">
-        <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-                <h2 class="font-bold text-4xl text-white mb-3">UKM Korps Protokoler Mahasiswa</h2>
-                <h3 class="font-bold text-2xl mb-2">Universitas Islam Malang</h3>
-                <p class="">email@gmail.com</p>
-                <p class=""> Jln. Mayjen Haryono No 193, Malang 65114</p>
-
-            </div>
-            <div class="w-full px-4 mb-12 md:w-1/3">
-                <h3 class="font-semibold text-xl text-white mb-5">Tentang Kami</h3>
-                <hr class="my-3">
-                <p class="text-slate-300 mt-3 text-justify">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sequi tempora asperiores accusamus
-                    nam
-                    adipisci non, tempore veniam beatae unde aliquid ducimus voluptatibus? Quae, tempore.
-                </p>
-
-            </div>
-            <div class="w-full px-4 mb-12 md:w-1/3">
-                <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
-                <ul class="text-slate-300">
-                    <li class=""><a href="#"
-                            class="inline-block text-base hover:text-orange-600 mb-3">Beranda</a></li>
-                    <li class=""><a href="#" class="inline-block text-base hover:text-orange-600 mb-3">Tentang
-                            Kami</a></li>
-                    <li class=""><a href="#"
-                            class="inline-block text-base hover:text-orange-600 mb-3">Galeri</a></li>
-                    <li class=""><a href="#" class="inline-block text-base hover:text-orange-600 mb-3">Berita
-                            Acara</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="w-full pt-10 border-t border-slate-700">
-            <div class="flex items-center text-white justify-center">
-                <div id="media-social" class="pt-2 text-4xl">
-                    <!-- Instagram -->
-                    <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
-                            class="bx bxl-instagram"></i></a>
-                    <!-- Youtube -->
-                    <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
-                            class="bx bxl-youtube"></i></a>
-                    <!-- Tiktok -->
-                    <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
-                            class="bx bxl-tiktok"></i></a>
-                    <!-- Whatsapp -->
-                    <a href="#" class="text-basic hover:text-orange-600 transition duration-300 ease-in-out"><i
-                            class="bx bxl-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-        <p class="font-medium text-sm text-slate-500 text-center mt-5">Copyright 2023, UKM Korps Protokoler Universitas Islam Malang</p>
+      <p class="font-medium text-sm text-slate-500 text-center mt-5">Copyright 2023, UKM Korps Protokoler Universitas
+        Islam Malang</p>
     </div>
-</footer>
+  </footer>
 
-<!-- TW-Element -->
-<script
-  type="text/javascript"
-  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
-></script>
+  <!-- TW-Element -->
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
-<!-- AoS CDN -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AoS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- Aos Initiate CDN -->
-<script>
+  <!-- Aos Initiate CDN -->
+  <script>
     AOS.init();
-</script>
-<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  </script>
+  <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
 
-  </body>
+</body>
+
 </html>
